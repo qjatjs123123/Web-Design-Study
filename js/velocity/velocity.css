@@ -195,7 +195,7 @@ Main Components
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+  background: url(cd-icon-arrow.svg) no-repeat center center;
 }
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);

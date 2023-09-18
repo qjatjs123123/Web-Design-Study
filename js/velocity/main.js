@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	var hijacking= $('body').data('hijacking'),
 		animationType = $('body').data('animation'),
 		delta = 0,
-        scrollThreshold = 5,
+        scrollThreshold = 1,
         actual = 1,
         animating = false;
     
