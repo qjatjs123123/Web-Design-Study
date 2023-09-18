@@ -1,0 +1,69 @@
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Reset CSS */
+* { box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+/* Default CSS */
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 15px;
+  margin : 0;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* Entire Layout */
+.cd-section{
+  height: 100vh;
+}
+.cd-section > div{
+  height: 100%;
+  position: relative;
+}
+.content{
+  background-color: #ddd;
+  position: absolute;
+  width: calc(100% - 40px);
+  height: calc(100% - 80px);
+  left: 20px;
+  bottom: 20px;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+}
+.gnb-inner {
+  /* border: 1px solid #000; */
+  width: calc(100% - 40px);
+  margin: auto;
+  height: 60px;
+  line-height: 60px;
+  
+}
+.logo {
+  float:left
+}
+.gnb {
+  float: right;
+}
+.menu {
+  display: none;
+}
+.menu a {}
+.slogan {
+  font-size: 16px;
+  font-style: italic;
+}
