@@ -100,6 +100,54 @@ header {
   transform: scale(0.7);
 }
 
+
+/* ############# Section : about ##############*/
+.about-inner{
+  background:#0dace3 url(images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+  /* background-color: #0dace3; */
+}
+.about-itmes{
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+}
+.item{
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.item:hover img{
+  filter: invert(0);
+}
+.item:hover h3{
+  color:#000;
+  
+}
+.item img {
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+  filter: invert(1);
+  transition: 0.5s;
+}
+.item h3{
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item span {
+
+}
+.item p {
+  overflow: hidden;
+  font-size: 18px;
+}
+
 /* ############# Section : awards winner ##############*/
 .awards-inner{
   height: 100%;
@@ -167,3 +215,69 @@ hr.bar {
   color : #fff;
   border-color: transparent;
 }
+
+/* ############# Section : location ##############*/
+.location-inner{
+  background: url(images/background-location.jpg) no-repeat center center;
+  height: 100%;
+}
+.location-inner:before{
+  content: '';
+  background-color: rgba(0,0,0,0.85);
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+.feature{ 
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#bbb;
+}
+.feature > div {
+  float:left;
+
+}
+.office{
+  width:60%;
+  padding-right: 100px;
+}
+.service{
+  width:40%
+}
+.office b {
+  font-weight: normal;
+}
+.office h2 {
+  color: #1db1f0;
+  font-weight: 500;
+  margin:0;
+  margin-top: 5px ;
+}
+.office p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.office span {
+  color:#fff;
+}
+.customer{
+  margin-top: 40px;
+}
+.service-item {
+  margin-bottom: 40px;
+}
+.service-item .fa{
+  color: #1db1f0;
+  font-size: 40px;
+}
+.service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+}
+
+
+
