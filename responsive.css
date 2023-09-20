@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  html{
+    scroll-behavior: smooth;
+  }
   /* Entire Layout */
   .cd-section{
     height: auto;
@@ -13,6 +16,14 @@
   }
 
   /* Header */
+  header{
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header.active{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
   .menu {
     display: block;
   }
@@ -23,10 +34,14 @@
     background-color: #fff;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -270px;
     width: 250px;
     height: 100vh;
     box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+    transition: 0.5s;
+  }
+  .gnb.active{
+    right : 0;
   }
   .menu{
     line-height: 40px;
@@ -39,4 +54,71 @@
     color : #000;
     font-size: 20px;
   }
+
+  /* Trigger */
+  .trigger{
+    display: block;
+    /* border: 1px solid red; */
+    width: 24px;  
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+  }
+  .trigger span{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+  .trigger span:nth-child(3) {
+    top : 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  /* GotoTop */
+  .gototop{
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    border: 1px solid #fff;
+    display: block;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active{
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  .btn_hiring {
+    right: 20px;
+    bottom:20px;
+  }
+
 }

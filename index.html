@@ -10,7 +10,8 @@
   <script src="js/velocity/velocity.ui.min.js"></script>
   <script src="js/velocity/main.js"></script>
   <link rel="stylesheet" href="js/velocity/velocity.css">
-
+	<!-- Smooth Scrolling -->
+	<script src="js/jquery.scrollTo.min.js"></script>
   <!-- Custom JS & CSS -->
   <script src="custom.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -19,9 +20,9 @@
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-<body data-hijacking="on" data-animation="gallery">
+<body data-hijacking="off" data-animation="gallery">
 	<div class="container">
-		<section class="cd-section visible">
+		<section class="cd-section visible" id="home">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-01.jpg">
@@ -29,7 +30,7 @@
 			</div>
 		</section>
 
-		<section class="cd-section">
+		<section class="cd-section" id="about">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-02.jpg">
@@ -37,7 +38,7 @@
 			</div>
 		</section>
 	
-		<section class="cd-section">
+		<section class="cd-section" id="project">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-03.jpg">
@@ -45,7 +46,7 @@
 			</div>
 		</section>
 	
-		<section class="cd-section">
+		<section class="cd-section" id="plan">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-04.jpg">
@@ -53,15 +54,29 @@
 			</div>
 		</section>
 	
-		<section class="cd-section">
+		<section class="cd-section" id="awards">
 			<div>
 				<div class="content">
-					<img src="images/temp-section-05.jpg">
+					<div class="awards-inner">
+						<div class="about-awards">
+							<div class="about-heading">
+								<h2>2020 <br /> Architecture Award <br /> Winner</h2>
+								<hr class="bar">
+								<p>
+									The mission of the Architecture MasterPrize (AMP) is to advance the appreciation and exposure of quality architectural design worldwide. The AMP architecture award celebrates creativity and innovation in the fields of architectural design, landscape architecture, and interior design. Submissions from architects all around the world are welcome.
+								</p>
+								<a class="view-awards" href="https://solved.ac/" target="_blank">view the awards</a>
+							</div>
+						</div>
+						<div class="vitory-jump">
+							<img src="images/victory-jump.png" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 	
-		<section class="cd-section">
+		<section class="cd-section" id="location">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-06.jpg">
@@ -69,7 +84,7 @@
 			</div>
 		</section>
 	
-		<section class="cd-section">
+		<section class="cd-section" id="contact">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-07.jpg">
@@ -83,13 +98,13 @@
 				</div>
 				<div class="gnb">
 					<div class="menu">
-						<a href="#none">Home</a>
-						<a href="#none">About</a>
-						<a href="#none">Project</a>
-						<a href="#none">Plan & History</a>
-						<a href="#none">Awards</a>
-						<a href="#none">Location</a>
-						<a href="#none">Contact</a>
+						<a href="#home">Home</a>
+						<a href="#about">About</a>
+						<a href="#project">Project</a>
+						<a href="#plan">Plan & History</a>
+						<a href="#awards">Awards</a>
+						<a href="#location">Location</a>
+						<a href="#contact">Contact</a>
 					</div>
 					<div class="slogan">We design places, not projects.</div>
 				</div>
@@ -102,6 +117,15 @@
 		</header>
 	</div>
 
+	<a href="#" class="gototop">
+		<img src="images/gototop.png" alt="">
+	</a>
+	
+	<a href="" class="btn_hiring">
+		<i class="fa fa-commenting"></i>
+		Hiring
+	</a>
+		
 	<nav>
 		<ul class="cd-vertical-nav">
 			<li><a href="#0" class="cd-prev inactive">Next</a></li>

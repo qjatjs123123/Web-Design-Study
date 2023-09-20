@@ -13,7 +13,6 @@ jQuery(document).ready(function($){
     	prevArrow = verticalNav.find('a.cd-prev'),
     	nextArrow = verticalNav.find('a.cd-next');
 
-	
 	//check the media query and bind corresponding events
 	var MQ = deviceType(),
 		bindToggle = false;
@@ -28,7 +27,6 @@ jQuery(document).ready(function($){
 	});
 
     function bindEvents(MQ, bool) {
-    	
     	if( MQ == 'desktop' && bool) {   		
     		//bind the animation to the window scroll event, arrows click and keyboard
 			if( hijacking == 'on' ) {
@@ -72,7 +70,6 @@ jQuery(document).ready(function($){
 		var scrollTop = $(window).scrollTop(),
 			windowHeight = $(window).height(),
 			windowWidth = $(window).width();
-		
 		sectionsAvailable.each(function(){
 			var actualBlock = $(this),
 				offset = scrollTop - actualBlock.offset().top;
