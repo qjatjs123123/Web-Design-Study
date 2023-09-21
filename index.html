@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="js/velocity/velocity.css">
 	<!-- Smooth Scrolling -->
 	<script src="js/jquery.scrollTo.min.js"></script>
+	<!-- Slick.js -->
+	<script src="js/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="js/slick/slick-theme.css">
+	<link rel="stylesheet" href="js/slick/slick.css">
   <!-- Custom JS & CSS -->
   <script src="custom.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -20,9 +24,9 @@
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-<body data-hijacking="off" data-animation="gallery">
+<body data-hijacking="on" data-animation="gallery">
 	<div class="container">
-		<section class="cd-section visible" id="home">
+		<section class="cd-section" id="home">
 			<div>
 				<div class="content">
 					<img src="images/temp-section-01.jpg">
@@ -76,10 +80,79 @@
 			</div>
 		</section>
 	
-		<section class="cd-section" id="plan">
+		<section class="cd-section visible" id="plan">
 			<div>
 				<div class="content">
-					<img src="images/temp-section-04.jpg">
+					<div class="plan-inner">
+						<div class="plan-feature">
+							<div class="plan-info">
+								<div class="plan-heading">
+									<h2>Planning <br> For the Next Project</h2>
+									<hr class="bar">
+									<p>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero porro iure suscipit cumque. Officia nihil repellendus quidem, eum saepe illo ullam quis doloremque perferendis? Incidunt repudiandae reprehenderit magnam repellendus aliquid dolore blanditiis excepturi fuga quos harum ut modi sunt est, totam, eius dolor consequatur. Adipisci autem vero optio earum ad.
+									</p>
+								</div>
+								<div class="plan-photo">
+									<img src="images/plan-main-01.jpg" alt="">
+								</div>
+							</div>
+							<div class="history-info">
+								<h2>History</h2>
+								<hr class="bar">
+								<div class="history-slider">
+									<div>
+										<h4>The Project <br>of Architect for the <span>2013</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2014</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2015</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2016</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2017</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2018</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2019</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+									<div>
+										<h4>The Project <br>of Architect for the <span>2020</span></h4>
+										<p>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae voluptatum aspernatur deserunt voluptates, quos inventore repellendus debitis repellat laudantium.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -165,7 +238,50 @@
 		<section class="cd-section" id="contact">
 			<div>
 				<div class="content">
-					<img src="images/temp-section-07.jpg">
+					<div class="contact-inner">
+						<div class="contact-feature">
+							<div class="contact-form">
+								<h3><b>Contact</b> Us</h3>
+								<p>Feel free to ask for details, dont’save any questions.</p>
+								<form class="send-box">
+									<label>Email <span>*</span></label>
+									<input type="email">
+									<label>Subject <span>*</span></label>
+									<input type="text">
+									<label>Message <span>*</span></label>
+									<textarea cols="30" rows="10"></textarea>
+									<button>send message</button>
+								</form>
+							</div>
+							<div class="contact-info">
+								<h4>Our <b>Office</b></h4>
+								<ul>
+									<li>Address : Address: 309, New Cavendish St, EC1Y 3WK</li>
+									<li>Phone : 0800 214 5252</li>
+									<li>Email : designworks@designworks.com</li>
+								</ul>
+								<h4>Business <b>Hours</b></h4>
+								<ul>
+									<li>
+										<i class="fa fa-clock-o"></i>
+										 Monday - Friday : 9am to 5pm
+									</li>
+									<li>
+										<i class="fa fa-clock-o"></i>
+										 Saturday : 9am to 2pm
+									</li>
+									<li>
+										<i class="fa fa-clock-o"></i>
+										 Sunday : Closed
+									</li>
+								</ul>
+								<h4>Get in <b>Touch</b></h4>
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloremque labore voluptatum animi, consequatur quas. Consequuntur aperiam ad, voluptas dolorem dignissimos culpa nostrum hic sint ea recusandae. Sint nam harum aliquam facilis accusantium repellat exercitationem distinctio unde atque, ipsa sed, aliquid sapiente. Eos dicta possimus adipisci voluptatibus exercitationem cupiditate autem!
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

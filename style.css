@@ -9,7 +9,7 @@
 
 /* Reset CSS */
 * { box-sizing: border-box;}
-ul{list-style: none;}
+ul{list-style: none; padding:0;}
 a{text-decoration: none;}
 html{
   scroll-behavior: smooth;
@@ -148,6 +148,85 @@ header {
   font-size: 18px;
 }
 
+/* ############# Section : plan ##############*/
+.plan-inner{
+ background-color: #1d1b24;
+ height: 100%;
+
+}
+.plan-feature{
+
+  width:80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature > div{
+  height: 300px;
+  color: #bbb;
+}
+.plan-info{
+
+}
+.plan-info > div{
+  float: left;
+}
+.history-info{
+
+}
+.plan-heading{
+  width: 70%;
+  padding-right: 50px;
+}
+.plan-heading h2,
+.history-info h2{
+  color:#fff;
+  margin: 0;
+}
+.plan-heading p{
+  font-size:  16px;
+  line-height: 1.5em;
+}
+.plan-photo{
+  width: 30%;
+}
+.plan-photo img{
+  height: 270px;
+}
+.plan-heading hr.bar,
+.history-info hr.bar
+{
+  background-color: dodgerblue;
+ display: inline-block;
+}
+.history-slider{
+}
+.history-slider div h4{
+  color:#fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5em;
+}
+.history-slider div h4 span{
+  color: dodgerblue;
+}
+.history-slider div p{
+  font-size: 16px;
+  line-height: 1.5em;
+}
+/* Slick.js Custom CSS */
+.history-slider .slick-arrow{
+  display: none !important;
+}                              
+.history-slider .slick-dots li button:before{
+  color:#fff;
+  font-size: 40px;
+}
+.history-slider .slick-dots li{
+  margin : 0;
+}
 /* ############# Section : awards winner ##############*/
 .awards-inner{
   height: 100%;
@@ -279,5 +358,113 @@ hr.bar {
   margin: 0;
 }
 
+/* ############# Section : contact ##############*/
+.contact-inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+}
 
+.contact-feature {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+}
+
+.contact-feature > div {
+  float: left;
+  width: 50%;
+  padding:20px;
+}
+
+.contact-form {
+  
+}
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+.contact-form h3 b {
+  
+}
+.send-box{
+
+}
+.send-box label{
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+.send-box label span{
+  color: crimson;
+  font-weight: normal;
+}
+.send-box input[type=email],
+.send-box input[type=text],
+.send-box textarea{
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  width:100%;
+  transition: 0.5s;
+}
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover{
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+}
+
+.send-box input[type=email]:focus,
+.send-box input[type=text]:focus,
+.send-box textarea:focus{
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+  background-color: #eee;
+}
+
+.send-box button{
+  background-color: #0088cc;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.send-box button:hover{
+  background-color: #000;
+}
+.contact-info {
+
+}
+
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+  
+}
+.contact-info h4 b {
+
+}
+
+.contact-info ul li {
+  line-height: 2em;
+}
+
+.contact-info ul li:last-child{
+  color: #0088cc
+}
+.contact-info p {
+  line-height: 1.5em;
+}
