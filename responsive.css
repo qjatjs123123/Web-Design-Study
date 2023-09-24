@@ -120,5 +120,108 @@
     right: 20px;
     bottom:20px;
   }
+  .cd-vertical-nav{
+    display: none;
+  }
 
+  /* Show Hide Section */
+  #home,
+  #about,
+  #project,
+  /* #plan, */
+  #awards,
+  #location,
+  #contact{
+    display: none;
+  }
+
+
+  /* ############# Section : Home ##############*/
+
+  .home-inner{
+    background-color: #fff;
+    height: 100vh;
+  }
+  .welcome-text{
+    transform: translate(-50%,-50%) scale(0.7);
+    font-size: 40px;
+    width: 100%;
+  }
+  .home-heading{
+    left:20px;
+  }
+  .home-heading span{
+    font-size: 50px;
+  }
+
+  /* ############# Section : about ##############*/
+  .about-inner{
+    height: auto;
+    padding: 20px;
+  }
+  .about-inner::before{
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0
+  }
+  .about-itmes{
+    margin-top: 30px;
+    width: 100%;
+    position: static;
+    top:0;
+    left:0;
+    transform: none;
+    text-align: center;
+  }
+  .item img {
+    float:none;
+  }
+  .item p {
+    position: relative;
+  }
+  .item h3{
+    position: relative;
+  }
+
+
+  /* ############# Section : plan ##############*/
+  .plan-inner{
+    height: auto;
+    padding:20px
+   }
+   .plan-feature{
+
+    width:100%;
+    position: static;
+    transform: none;
+    top : 0;
+    left:0;
+  }
+  .plan-feature > div{
+    height: auto;
+  }
+  .plan-info > div{
+    float: none;
+    width:100%;
+  }
+  .plan-heading p{
+    text-align: center;
+  }
+  .plan-heading{
+    width: 70%;
+    padding-right: 0;
+  }
+  .plan-photo img{
+    height: auto;
+    width: 100%;
+  }
+  .plan-heading h2,
+  .history-info h2{
+    margin-top: 40px;
+  }
+  
 }

@@ -14,9 +14,7 @@
 * { box-sizing: border-box;}
 ul{list-style: none; padding:0;}
 a{text-decoration: none;}
-html{
-  scroll-behavior: smooth;
-}
+
 /* Default CSS */
 body{
   font-family: 'Montserrat', sans-serif;
