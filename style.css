@@ -802,7 +802,9 @@ hr.bar {
   margin-top: 40px;
 }
 .hiring-info{
+
   overflow: hidden;
+  
 }
 .hiring-info > div{
   
@@ -828,8 +830,9 @@ font-size: 36px;
 font-weight: normal;
 }
 .center-child p {
- font-size: 20px;
+ font-size: 22px;
  font-weight: 300;
+ line-height: 1.5em;
 }
 .photo img{
   /* background: url(images/hiring-main-01-01.jpg) no-repeat center center;
@@ -924,4 +927,104 @@ font-weight: normal;
 }
 .sns a:nth-child(6)::before{
   background-color: #00C300;
+}
+
+/* ################ SubPage : Hiring ################ */
+.hiring-main.project-main1{
+  background: url(images/project-main-01-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main2{
+  background: url(images/project-main-02-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main3{
+  background: url(images/project-main-03-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading{
+  color: #fff;
+  width: 100%;
+  animation: slidedown 0.7s linear both;
+}
+.hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1{
+  font-size: 70px;
+}
+.modal.project-detail .hiring-slogan p:before{
+  left: -100px;
+}
+.photo.project-info{
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 120px;
+}
+.modal.project-detail .hiring-heading span:before,
+.modal.project-detail .hiring-heading span:after{
+  content : '';
+  height: 2px;
+  background-color: #fff;
+  width: 50px;
+  position: absolute;
+  top : 50%;
+}
+
+@keyframes slidedown{
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  max-height: 100%;
+  background: #fff;
+  cursor: auto;
+  white-space: normal;
+  width: 80%;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.featherlight iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 50px;
+  line-height: 50px;
+  width: 50px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  border: none;
+  padding: 0;
+  font-size: 40px;
+  outline: none;
+  
 }
