@@ -124,16 +124,7 @@
     display: none;
   }
 
-  /* Show Hide Section */
-  #home,
-  #about,
-  #project,
-  /* #plan, */
-  #awards,
-  #location,
-  #contact{
-    display: none;
-  }
+
 
 
   /* ############# Section : Home ##############*/
@@ -223,5 +214,158 @@
   .history-info h2{
     margin-top: 40px;
   }
+
+  /* ############# Section : awards winner ##############*/
+  .awards-inner{
+    height: auto;
+    
+  }
+  .awards-inner > div{
+    float: none;
+    width:100%;
+    position: static;
+  }
+  .about-heading,
+  .vitory-jump img{
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+  }
+  .about-heading{
+    width:100%;
+  }
+  .vitory-jump{
+    text-align: center;
+    }
+
+  /* ############# Section : location ##############*/
+  .location-inner{
+    height: auto;
+    padding: 40px 0px;
+  }
+  .feature{
+    width: 100%;
+    position: relative;
+    left:0%;
+    top:0%;
+    transform: none;
+
+  }
+  .feature > div{
+    float:none;
+    width: 100%;
+    padding: 20px;
+  }
+  /* ############# Section : contact ##############*/
+.contact-inner {
+  padding: 40px 0px;
+  height: auto;
+}
+  .contact-feature{
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .contact-feature > div {
+    float: none;
+    width: 100%;
+  }
+  /* ############# Section : project ##############*/
+  .project-inner {
+    padding: 40px 0px;
+    height: auto;
+    border: none;
+  }
+  .tabs{
+    height: auto;
+  }
+  .tab > div{
+    float:none;
+    width: 100%;
+  }
+  .view-project{
+    width: 100%;
+  }
+  .project-info{
+    padding: 20px;
+  }
+  .project-info p{
+    position: relative;
+  }
+  .detail div {
+    font-size: 13px;
+  }
+  .btn{
+    width: 100%;
+  }
+
+  /* ################ SubPage : Hiring ################ */
+  .header-inner{
+    height: 60px;
+    line-height: 60px;
+  }
+  .hiring-main{
+    height:  300px;
+    position: relative;
+  }
+  .hiring-heading  h1{
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .hiring-heading{
+    width: 100%;
+    top:65%
+  }
+  .hiring-info > div{
   
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .center-child{
+    position: static;
+    transform: none;
+    width: 100%;
+  
+  }
+  .hiring-slogan{
+    padding: 50px 0; 
+  }
+  .hiring-slogan p{
+    font-size: 26px;
+    
+  }
+  .hiring-slogan p:before {
+    top:-100px;
+    left: -10px !important;
+  }
+  .hiring-contact ul{
+    display: block;
+    width: 100%;
+  }
+  .center-child h2{
+    font-size: 22px;
+    }
+  /* Featherlight Mobile CSS */
+  .featherlight .featherlight-close-icon{
+    font-size: 24px;
+    right:0px;
+    top: 15px;
+  }
+  /* ################ SubPage : Hiring ################ */
+  .hiring-main.project-main1,
+  .hiring-main.project-main2,
+  .hiring-main.project-main3
+  {
+    
+    height: 70vh;
+  }
+  .hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1{
+  font-size: 30px;
+}
+.photo.project-info{
+  font-size: 15px
+}
 }

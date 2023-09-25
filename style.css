@@ -569,7 +569,9 @@ hr.bar {
 /* ############# Section : location ##############*/
 .location-inner{
   background: url(images/background-location.jpg) no-repeat center center;
+  background-size: cover;
   height: 100%;
+  position: relative;
 }
 .location-inner:before{
   content: '';
